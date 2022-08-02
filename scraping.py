@@ -101,7 +101,7 @@ def hemispheres(browser):
     try:
         for i in range (4):
             hemispheres = {}
-            browser.find_by_tag('h3')[i].click()
+            browser.find_by_css('h3')[i].click()
     
             image_urls = browser.links.find_by_text("Sample").first
             hemispheres['image_urls'] = image_urls['href']
